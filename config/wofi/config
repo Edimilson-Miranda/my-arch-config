@@ -1,0 +1,38 @@
+[wofi]
+# Ativa a exibição de ícones (já configurado)
+show-icons=true  
+
+# Tamanho do ícone, pode ajustar dependendo da sua preferência
+image_size=20     # Use um valor menor para ícones mais compactos ou maior para mais visibilidade
+
+# Layout de colunas ajustado para uma aparência mais flexível
+columns=2         # 3 colunas pode ser mais interessante, dependendo do seu conteúdo
+width=42%         # Aumentar a largura para melhor visualização dos itens e ícones
+
+# Controle de número de linhas visíveis, dependendo do seu menu
+lines=10          # Pode ajustar para caber mais itens ou reduzir se preferir um visual mais compacto
+
+# Configurações de barra de rolagem e imagens
+hide_scroll=true  # Esconde a barra de rolagem para uma experiência mais limpa
+allow_images=true # Permite exibição de imagens, ótimo para ícones e imagens personalizadas
+
+# Personalização do prompt de pesquisa
+prompt=Search...  # Texto da barra de pesquisa
+normal_window=false # Desativa a janela normal para um design mais elegante e fluido
+
+# Pesquisa e correspondência
+matching=fuzzy    # Pesquisa fuzzy ajuda a encontrar itens rapidamente com digitação flexível
+insensitive=true  # Pesquisa insensível a maiúsculas/minúsculas
+
+# Estilo e suavização visual
+# Definir um estilo mais elegante, por exemplo, para bordas arredondadas ou transparência
+background_color=#282a36   # Cor de fundo mais suave e discreta, de acordo com o tema
+highlight_color=#bd93f9    # Cor do destaque para itens selecionados, o mesmo tom da borda
+border_radius=10           # Bordas arredondadas para uma aparência mais moderna
+border_width=1             # Borda sutil ao redor dos itens
+
+# Ajuste de animação (opcional para uma experiência mais fluida)
+animation=true             # Ativa animações suaves para abrir e fechar o menu
+
+# Transparência opcional para um toque mais elegante (opcional)
+background_opacity=0.85   # Ajuste a opacidade do fundo para um efeito sutil de transparência

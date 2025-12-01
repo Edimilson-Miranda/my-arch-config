@@ -1,0 +1,12 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[Recent Files]
+File1[$e]=$HOME/.config/waybar/style.css
+File2[$e]=$HOME/.config/waypaper/config.ini
+Name1[$e]=style.css
+Name2[$e]=config.ini

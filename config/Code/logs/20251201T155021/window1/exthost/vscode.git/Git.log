@@ -1,0 +1,29 @@
+2025-12-01 15:50:24.474 [info] [main] Log level: Info
+2025-12-01 15:50:24.474 [info] [main] Validating found git in: "git"
+2025-12-01 15:50:24.474 [info] [main] Using git "2.52.0" from "git"
+2025-12-01 15:50:24.474 [info] [Model][doInitialScan] Initial repository scan started
+2025-12-01 15:50:24.474 [info] > git rev-parse --show-toplevel [52ms]
+2025-12-01 15:50:24.474 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [6ms]
+2025-12-01 15:50:24.474 [info] [Model][openRepository] Opened repository (path): /home/miranda/my-hyprland-config
+2025-12-01 15:50:24.474 [info] [Model][openRepository] Opened repository (real path): /home/miranda/my-hyprland-config
+2025-12-01 15:50:24.474 [info] [Model][openRepository] Opened repository (kind): repository
+2025-12-01 15:50:24.490 [info] > git config --get commit.template [8ms]
+2025-12-01 15:50:24.494 [info] > git rev-parse --show-toplevel [7ms]
+2025-12-01 15:50:24.542 [info] > git rev-parse --show-toplevel [30ms]
+2025-12-01 15:50:24.546 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-12-01 15:50:24.546 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [42ms]
+2025-12-01 15:50:24.704 [info] > git status -z -uall [9ms]
+2025-12-01 15:50:24.704 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-12-01 15:50:24.741 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [9ms]
+2025-12-01 15:50:24.750 [info] > git config --get --local branch.main.vscode-merge-base [3ms]
+2025-12-01 15:50:24.756 [info] > git config --get commit.template [16ms]
+2025-12-01 15:50:24.759 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [3ms]
+2025-12-01 15:50:24.772 [info] > git merge-base refs/heads/main refs/remotes/origin/main [6ms]
+2025-12-01 15:50:24.779 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [7ms]
+2025-12-01 15:50:24.785 [info] > git diff --name-status -z --diff-filter=ADMR --find-renames=50% 400765398b5a19f9b5d20fd2a1cd573cbdad77c0...refs/remotes/origin/main -- [7ms]
+2025-12-01 15:50:24.802 [info] > git status -z -uall [9ms]
+2025-12-01 15:50:24.804 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-12-01 15:50:24.940 [info] > git show --textconv :README.md [9ms]
+2025-12-01 15:50:24.942 [info] > git ls-files --stage -- README.md [3ms]
+2025-12-01 15:50:24.965 [info] > git cat-file -s 5c7ca4d6c019cfaeeeefb6a59fb3bf35277a3837 [14ms]
+2025-12-01 15:50:25.050 [info] > git check-ignore -v -z --stdin [2ms]

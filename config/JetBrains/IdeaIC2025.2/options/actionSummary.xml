@@ -1,0 +1,49 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="CreateDesktopEntry">
+      <i c="1" l="1764456336004" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="14" l="1764456312857" />
+    </e>
+    <e n="EditorLeft">
+      <i c="1" l="1764456312159" />
+    </e>
+    <e n="FileChooser.Delete">
+      <i c="1" l="1764456273743" />
+    </e>
+    <e n="FileChooser.NewFolder">
+      <i c="2" l="1764456278865" />
+    </e>
+    <e n="NewDir">
+      <i c="1" l="1764456402965" />
+    </e>
+    <e n="SaveAll">
+      <i c="5" l="1764456375618" />
+    </e>
+    <e n="SettingsEntryPoint">
+      <i c="1" l="1764456317506" />
+    </e>
+    <e n="ShowProjectStructureSettings">
+      <i c="1" l="1764456318546" />
+    </e>
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="1" l="1764456241955" />
+    </e>
+    <e n="com.intellij.execution.lineMarker.LineMarkerActionWrapper">
+      <i c="1" l="1764456379740" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="1" l="1764456241358" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
+      <i c="1" l="1764456333881" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="1" l="1764456397972" />
+    </e>
+    <e n="com.intellij.xdebugger.impl.breakpoints.RemoveBreakpointGutterIconAction">
+      <i c="1" l="1764456304736" />
+    </e>
+  </component>
+</application>

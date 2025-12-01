@@ -1,0 +1,59 @@
+#!/bin/bash
+
+USER_NAME=$(whoami)
+
+cat << EOF > $HOME/.config/wlogout/style.css
+window {
+    font-family: CaskaydiaCove Nerd Font, monospace;
+    font-size: 12pt;
+    color: #f4dfcd; 
+    background-color: rgba(30, 30, 46, .69);
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-size: 60%;
+    border: none;
+    color: #152749;
+    text-shadow: none;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgba(19, 62, 103, 0);
+    margin: 1px;
+    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: rgba(18, 58, 96, 0.3);
+}
+
+
+
+#lock {
+    background-image: url("/home/$USER_NAME/.config/wlogout/icons/lock.png");
+    background-size: 55%;
+}
+
+#logout {
+    background-image: url("/home/$USER_NAME/.config/wlogout/icons/logout.png");
+     background-size: 55%;
+}
+
+#suspend {
+    background-image: url("/home/$USER_NAME/.config/wlogout/icons/sleep.png");
+     background-size: 55%;
+} 
+
+#shutdown {
+    background-image: url("/home/$USER_NAME/.config/wlogout/icons/power.png");
+     background-size: 55%;
+}
+
+#reboot {
+    background-image: url("/home/$USER_NAME/.config/wlogout/icons/restart.png");
+     background-size: 55%;
+}
+EOF

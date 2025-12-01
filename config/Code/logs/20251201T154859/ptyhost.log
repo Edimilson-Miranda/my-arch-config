@@ -1,0 +1,6 @@
+2025-12-01 15:49:01.741 [info] Revived process, old id c834e00da87a6162890219d91d79e1e7-2 -> new id 1
+2025-12-01 15:49:01.782 [info] Expanding terminal instance, old id c834e00da87a6162890219d91d79e1e7-2 -> new id 1
+2025-12-01 15:49:02.474 [warning] Persistent process "1": Process had no disconnect runners but was an orphan
+2025-12-01 15:49:02.474 [info] Persistent process reconnection "1"
+2025-12-01 15:49:02.499 [error] Failed to set sticky bit on /tmp/miranda-code-zsh: Error: ENOENT: no such file or directory, chmod '/tmp/miranda-code-zsh'
+2025-12-01 15:49:02.520 [info] Persistent process "1": Replaying 6285 chars and 1 size events

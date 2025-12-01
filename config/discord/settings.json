@@ -1,0 +1,8 @@
+{
+  "offloadAdmControls": true,
+  "enableHardwareAcceleration": true,
+  "chromiumSwitches": {},
+  "asyncVideoInputDeviceInit": false,
+  "IS_MAXIMIZED": true,
+  "IS_MINIMIZED": false
+}

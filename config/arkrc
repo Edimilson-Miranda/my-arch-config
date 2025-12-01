@@ -1,0 +1,13 @@
+[ExtractDialog]
+1366x768 screen: Window-Maximized=true
+DirHistory[$e]=$HOME/Documentos/Intellij/,$HOME/Pictures/Wallpaper/
+
+[Extraction]
+closeAfterExtraction=true
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+StatusBar=Disabled

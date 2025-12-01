@@ -1,0 +1,1 @@
+2025-12-01 15:03:25.136 [error] Failed to set sticky bit on /tmp/miranda-code-zsh: Error: ENOENT: no such file or directory, chmod '/tmp/miranda-code-zsh'

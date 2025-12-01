@@ -1,0 +1,50 @@
+/* Notificação */
+.notification {
+    background: rgba(24, 29, 37, 0.322); /* Fundo preto semitransparente */
+    border: 1px solid rgba(6, 19, 118, 0.742); /* Contorno sutil */
+    border-radius: 8px; /* Arredondamento */
+    padding: 10px;
+    color: #fff; /* Texto branco */
+}
+
+/* Conteúdo da notificação */
+.notification-content {
+    background: rgba(24, 29, 37, 0.322); /* Fundo preto com menos transparência */
+    color: #fff; /* Texto branco */
+    border: 1px solid rgba(24, 29, 37, 0.322); /* Contorno branco sutil */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Resumo da notificação */
+.summary {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Corpo da notificação */
+.body {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* Tempo da notificação */
+.time {
+    font-size: 12px;
+    color: #fff;
+    padding: 5px;
+    margin-right: 40px;
+}
+
+/* Botão de fechar */
+.close-button {
+    background: rgba(50, 50, 50, 0.7); /* Fundo cinza escuro */
+    border: 1px solid rgba(200, 200, 200, 0.3); /* Contorno leve */
+    color: #fff; /* Texto branco */
+    border-radius: 8px; /* Arredondamento */
+    margin-top: 10px;
+    margin-right: 10px;
+}

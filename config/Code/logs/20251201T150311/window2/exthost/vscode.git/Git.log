@@ -1,0 +1,63 @@
+2025-12-01 15:19:25.883 [info] [main] Log level: Info
+2025-12-01 15:19:25.883 [info] [main] Validating found git in: "git"
+2025-12-01 15:19:25.883 [info] [main] Using git "2.52.0" from "git"
+2025-12-01 15:19:25.883 [info] [Model][doInitialScan] Initial repository scan started
+2025-12-01 15:19:25.883 [info] > git rev-parse --show-toplevel [5ms]
+2025-12-01 15:19:25.883 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-12-01 15:19:25.883 [info] > git rev-parse --show-toplevel [3ms]
+2025-12-01 15:19:25.883 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-12-01 15:19:25.891 [info] > git rev-parse --show-toplevel [3ms]
+2025-12-01 15:19:25.891 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-12-01 15:19:25.894 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-12-01 15:19:36.650 [info] > git rev-parse --show-toplevel [3ms]
+2025-12-01 15:19:36.650 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-12-01 15:19:37.202 [info] > git rev-parse --show-toplevel [7ms]
+2025-12-01 15:19:37.202 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-12-01 15:19:42.214 [info] > git rev-parse --show-toplevel [3ms]
+2025-12-01 15:19:42.222 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [3ms]
+2025-12-01 15:19:42.243 [info] [Model][openRepository] Opened repository (path): /home/miranda/my-hyprland-config
+2025-12-01 15:19:42.243 [info] [Model][openRepository] Opened repository (real path): /home/miranda/my-hyprland-config
+2025-12-01 15:19:42.243 [info] [Model][openRepository] Opened repository (kind): repository
+2025-12-01 15:19:42.262 [info] > git config --get commit.template [7ms]
+2025-12-01 15:19:42.271 [info] [Git][getRemotes] No remotes found in the git config file
+2025-12-01 15:19:42.272 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-12-01 15:19:42.272 [warning] [Git][getBranch] No such branch: master
+2025-12-01 15:19:42.284 [info] > git status -z -uall [7ms]
+2025-12-01 15:19:42.287 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-12-01 15:19:42.310 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2025-12-01 15:19:42.310 [warning] [Git][getBranch] No such branch: master
+2025-12-01 15:19:42.311 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2025-12-01 15:19:42.312 [info] > git config --get commit.template [3ms]
+2025-12-01 15:19:42.313 [info] [Git][getRemotes] No remotes found in the git config file
+2025-12-01 15:19:42.318 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-12-01 15:19:42.318 [warning] [Git][getBranch] No such branch: master
+2025-12-01 15:19:42.381 [info] > git status -z -uall [58ms]
+2025-12-01 15:19:42.381 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [53ms]
+2025-12-01 15:19:42.778 [info] > git check-ignore -v -z --stdin [3ms]
+2025-12-01 15:20:15.793 [info] [Git][getRemotes] No remotes found in the git config file
+2025-12-01 15:20:15.795 [info] > git config --get commit.template [10ms]
+2025-12-01 15:20:15.796 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-12-01 15:20:15.808 [info] > git status -z -uall [5ms]
+2025-12-01 15:20:15.809 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-12-01 15:20:25.204 [info] > git config --get commit.template [10ms]
+2025-12-01 15:20:25.210 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [7ms]
+2025-12-01 15:20:25.238 [info] > git status -z -uall [11ms]
+2025-12-01 15:20:25.242 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-12-01 15:20:25.274 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [7ms]
+2025-12-01 15:20:25.289 [info] > git config --get --local branch.main.vscode-merge-base [5ms]
+2025-12-01 15:20:25.289 [warning] [Git][config] git config failed: Failed to execute git
+2025-12-01 15:20:25.313 [info] > git reflog main --grep-reflog=branch: Created from *. [8ms]
+2025-12-01 15:20:25.328 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [4ms]
+2025-12-01 15:20:25.328 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-12-01 15:20:25.328 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-12-01 15:20:47.754 [info] > git config --get commit.template [11ms]
+2025-12-01 15:20:47.756 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-12-01 15:20:47.779 [info] > git status -z -uall [12ms]
+2025-12-01 15:20:47.781 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-12-01 15:20:47.802 [info] > git merge-base refs/heads/main refs/remotes/origin/main [4ms]
+2025-12-01 15:20:47.817 [info] > git diff --name-status -z --diff-filter=ADMR --find-renames=50% 3947a93f9cd099cd56c352e3dbe0ee27d4365b54...refs/remotes/origin/main -- [4ms]

@@ -1,0 +1,137 @@
+/* Janela principal com borda azul mais destacada e efeito de blur */
+window {
+    margin: 0px;
+    border: 3px solid #00008B;  /* Borda azul */
+    background-color: rgba(46, 47, 48, 0.75);  /* Aumenta a transparência para dar mais leveza */
+    border-radius: 12px;  /* Bordas arredondadas */
+    backdrop-filter: blur(25px);  /* Efeito de blur */
+}
+
+/* Estilo do campo de entrada */
+#input {
+    margin: 5px;
+    border: none;
+    color: #f8f8f2;
+    background-color: rgba(68, 71, 90, 0.75);  /* Transparência mais visível */
+    border-radius: 8px;  /* Bordas arredondadas */
+    transition: none !important; /* Removendo qualquer transição no campo de entrada */
+}
+
+/* Caixa interna com fundo semitransparente */
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: rgba(35, 35, 39, 0.75);  /* Menos opacidade para um fundo mais leve */
+    border-radius: 8px;  /* Bordas arredondadas */
+    transition: none !important; /* Removendo qualquer transição */
+}
+
+/* Caixa externa com fundo semitransparente */
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: rgba(40, 42, 54, 0.75);  /* Menos opacidade */
+    border-radius: 8px;  /* Bordas arredondadas */
+    transition: none !important; /* Removendo qualquer transição */
+}
+
+/* Estilo do scroll (barra de rolagem) */
+#scroll {
+    margin: 0px;
+    border: none;
+    border-radius: 8px;  /* Bordas arredondadas */
+    transition: none !important; /* Removendo transição */
+}
+
+/* Estilo do texto */
+#text {
+    margin: 5px;
+    border: none;
+    color: #f8f8f2;
+}
+
+/* Estilo de texto no item selecionado */
+#entry.activatable #text {
+    color: #282a36;
+}
+
+/* Ajuste de cor de texto para todos os itens */
+#entry > * {
+    color: #f8f8f2;
+}
+
+/* Estilo do item selecionado (ao navegar com o teclado) */
+#entry:selected {
+    background-color: rgba(68, 71, 90, 0.15);  /* Cor de fundo bem suave, quase transparente */
+    border-radius: 8px;  /* Bordas arredondadas */
+    border: 2px solid #00008B;  /* Borda do item selecionado com a mesma cor */
+}
+
+/* Estilo de texto no item selecionado (ao navegar com o teclado) */
+#entry:selected #text {
+    font-weight: normal;  /* Retira o negrito */
+    color: rgba(248, 248, 242, 0.8);  /* Cor suave e visível */
+}
+
+/* Ajustando a borda quando clicado na opção (ao invés da borda quadrada preta) */
+#entry:active {
+    border-radius: 8px;  /* Borda arredondada ao clicar */
+    border: 2px solid #00008B;  /* Borda da opção selecionada */
+    background-color: rgba(68, 71, 90, 0.2);  /* Fundo mais suave */
+}
+
+/* Ajuste do submenu de expansão e setas */
+#entry > .submenu {
+    position: absolute;  /* Mudando para 'absolute' para controle de posição */
+    left: 100%;  /* Move o submenu para a direita do item */
+    top: 0;  /* Alinha com o topo do item */
+    margin-left: 10px;  /* Espaço entre o ícone e o submenu */
+    border-radius: 8px;  /* Borda arredondada */
+    background-color: rgba(40, 42, 54, 0.85);  /* Fundo suave */
+    display: none;  /* Inicialmente escondido */
+    z-index: 10;  /* Coloca o submenu sobre outros elementos */
+    transition: none;  /* Remove qualquer transição que possa interferir */
+}
+
+/* Exibe o submenu quando o item está ativo (clicado) ou é focado */
+#entry:hover > .submenu,
+#entry:focus-within > .submenu {
+    display: block;  /* Torna visível quando o item é ativo ou está sendo focado */
+}
+
+/* Submenu de setas ou ícones de expandir */
+#entry > .submenu > .expand-icon {
+    position: absolute; /* Posiciona a seta/ícone dentro do item */
+    top: 50%;  /* Coloca no meio vertical do item */
+    right: -20px;  /* Ajusta para aparecer à direita */
+    transform: translateY(-50%);  /* Centra verticalmente */
+    transition: none !important; /* Remove qualquer transição extra */
+}
+
+/* Ajuste para o submenu aparecer suavemente */
+#entry > .submenu > .expand-icon:hover {
+    color: rgba(248, 248, 242, 0.8);  /* Cor suave ao passar o mouse */
+}
+
+/* Adiciona a sombra e relevo entre os itens */
+#entry {
+    margin-right: 5px;  /* Espaçamento entre as colunas */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(0, 0, 0, 0.1); /* Efeito de relevo */
+    border-radius: 8px;  /* Borda arredondada */
+}
+
+/* Garante que o submenu fique alinhado corretamente sem causar tremores */
+#entry, #inner-box, #outer-box {
+    transition: none !important;  /* Remover qualquer transição indesejada */
+}
+
+/* Garante que o submenu de expansão esteja no lado direito */
+#entry > .submenu {
+    display: none;  /* Submenu oculto por padrão */
+}
+
+/* Garante que o item de submenu apareça com efeitos suaves */
+#entry:hover > .submenu,
+#entry:focus-within > .submenu {
+    display: block;  /* Submenu visível ao passar o mouse ou ao focar */
+}
