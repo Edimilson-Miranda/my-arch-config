@@ -1,0 +1,33 @@
+@theme "~/.config/rofi/themes/Monokai.rasi"
+
+/* Configurações gerais */
+configuration {
+    show-icons: true;          /* Exibe ícones nos menus */
+    drun-icon-theme: "Papirus"; /* Nome do tema de ícones (ajuste conforme o sistema) */
+    sidebar-mode: false;       /* Desativa o modo de barra lateral */
+    location: 0;               /* Localização da janela (0 = centro) */
+    width: 50;                 /* Largura da janela em % */
+    lines: 10;                 /* Número de linhas visíveis */
+    columns: 3;                /* Número de colunas */
+    fixed-num-lines: true;     /* Garante layout consistente */
+    matching: "fuzzy";         /* Pesquisa fuzzy */
+    font: "monospace 12";      /* Fonte padrão (ajuste conforme preferir) */
+}
+
+/* Estilo do Elemento */
+element {
+    padding: 2px;              /* Espaçamento interno dos itens */
+    border-radius: 8px;        /* Bordas arredondadas */
+}
+
+/* Estilo do Ícone */
+element-icon {
+    size: 24px;                /* Tamanho do ícone */
+}
+
+/* Estilo da Janela */
+window {
+    border: 2px;               /* Largura da borda da janela */
+    border-color: #282828;     /* Cor da borda */
+    border-radius: 10px;       /* Bordas arredondadas na janela */
+}

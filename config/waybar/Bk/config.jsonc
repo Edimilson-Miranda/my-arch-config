@@ -1,0 +1,132 @@
+{
+    "position": "top",
+    "layer": "top",
+    "mode": "dock",
+    "spacing": 2,
+    "margin": "2 5 0 12", //top;right,bottom,left
+    "reload_style_on_change": true,
+    "modules-left": [
+        "custom/power",
+        "hyprland/workspaces",
+        "wlr/taskbar"
+    ],
+    "modules-center": [
+        "clock",
+        
+    ],
+"modules-right": [
+//  "hyprland/language",
+//  "keyboard-state",
+    "custom/updater",
+    "disk",
+    "cpu",
+    "memory",
+    "pulseaudio",
+    "tray"
+],
+    "custom/power": {
+        "format": "󰣇",
+        "tooltip": false,
+        "on-click": "wlogout -b 6"
+    },
+    "hyprland/workspaces": {
+    "disable-scroll": false,  // Habilita a rolagem para trocar de workspace
+    "workspace-wheel": true,  // Permite a troca de workspace com o scroll do mouse
+    "persistent-workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": []
+    }
+    },
+        "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 22,
+        "tooltip-format": "{name}",
+        "on-click": "activate"
+    },
+    "memory": {
+		"interval": 5,
+		"format": " {}%"
+	},
+    "disk": {
+        "interval": 30,
+        "format": "󰋊 {percentage_used}%",
+        "path": "/",
+        "tooltip": true,
+        "unit": "GB",
+        "tooltip-format":  "Available {free} of {total}"
+    },
+"custom/updater": {
+    "format": "  {}",  // Contagem de atualizações + ícone
+    "interval": 1800,   // Verifica a cada 30 minutos
+    "exec": "total_updates=$(checkupdates | wc -l); flatpak_updates=$(flatpak remote-ls --updates | wc -l); aur_updates=$(yay -Qu | wc -l); echo $((total_updates + flatpak_updates + aur_updates))",  // Contagem total de atualizações
+    "exec-if": "exit 0",  // Sempre executar
+    "on-click": "kitty --hold bash -c '/home/rael/.config/hypr/scripts/upgrade.sh;'",  // Executa o script de atualização (clique esquerdo)
+    "on-click-right": "kitty --hold bash -c '~/.config/hypr/scripts/check_and_update.sh; cat /tmp/waybar-updates-list'",  // Verifica os updates sem aplicar (meio clique)
+    "signal": 8  // Sinal para atualizar o Waybar
+    },
+    "cpu": {
+		"interval": 5,
+		"format": " {usage:2}%"
+	},
+    "clock": {
+    "format": "{:%d-%m | %H:%M}",
+    "tooltip": false,
+    "justify": "center",
+    "on-click": "gnome-calendar"
+    },
+    "hyprland/language": {
+        "format": "{long}",
+        "tooltip": false
+    },
+    "keyboard-state": {
+        "capslock": true,
+        "format": {
+            "capslock": "{icon}"
+        },
+        "format-icons": {
+            "locked": "󰬶",
+            "unlocked": "󰬵"
+        }
+    },
+    "pulseaudio": {
+    "format": "{icon}", 
+    "format-bluetooth": "󰂰 {icon}", 
+    "format-muted": "󰖁",
+    "tooltip-format": "Volume: {volume}%",
+    "format-icons": {
+        "default": [
+            "󰕿",  // Silenciado
+            "󰖀",  // Volume baixo/médio
+            "󰕾"   // Volume alto
+        ]
+    },
+    "scroll-step": 5,
+    "justify": "left",
+    "on-click": "amixer sset Master toggle",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+    },
+    "jack": {
+    "format": "{} 󱎔",
+    "format-xrun": "{xruns} xruns",
+    "format-disconnected": "DSP off",
+    "realtime": true
+    },
+    "tray": {
+        "icon-size": 22,
+        "show-passive-items": true,
+        "spacing": 10
+    },
+    "network": {
+        "justify": "center",
+        "format-ethernet": "󰈀",
+        "tooltip-format-ethernet": "{ipaddr}",
+        "format-wifi": "󰤨",
+        "tooltip-format-wifi": "{essid} {frequency} {signalStrength}",
+        "format-disconnected": "󰤭",
+        "tooltip-format-disconnected": "Disconnected"
+    }
+  } 

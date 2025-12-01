@@ -1,0 +1,151 @@
+@import '../css/TokyoNight.css';
+
+* {
+  font-family: JetBrainsMono Nerd Font;
+  border-radius: 8px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: rgba(240, 240, 240, 0.9); /* Branco mais claro */
+}
+
+window#waybar {
+  background: transparent;
+}
+
+#custom-power, #custom-updater, #disk, #workspaces, #taskbar, #clock, #language, #keyboard-state, #pulseaudio, #tray, #network, #memory, #cpu, #custom-notification {
+  border: 1px solid;
+  border-color: rgba(135, 206, 235, 1.0); /* Tom azul claro (day-sky-blue) */
+  background: rgba(45, 45, 55, 0.9); /* Fundo consistente com o tema */
+  color: rgba(240, 240, 240, 0.9); /* Branco mais claro para texto */
+}
+
+/* Manter borda no custom-power e taskbar */
+#taskbar {
+  border: 1px solid rgba(135, 206, 235, 1.0); /* Borda azul claro */
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgba(45, 45, 55, 0.9); /* Fundo consistente */
+}
+
+#custom-power {
+  padding-left: 8px;
+  padding-right: 15px;
+  color: rgba(0, 255, 200, 1.0); /* Verde-azulado vibrante (destaca mais) */
+  border: 1px solid rgba(135, 206, 235, 1.0); /* Borda azul claro */
+}
+
+#custom-power, #custom-updater, #disk, #custom-notification, #network, #memory, #pulseaudio, #cpu, #keyboard-state {
+  font-size: 20px;
+}
+
+#workspaces, #clock, #language {
+  font-size: 20px;
+}
+
+#workspaces, #taskbar {
+  margin-left: 6px;
+}
+
+#language, #keyboard-state,#custom-updater, #disk, #pulseaudio, #tray, #network, #memory, #cpu {
+  margin-right: 6px;
+}
+
+/* Restabelecer a borda e o estilo do custom-power */
+#custom-power {
+  border: 1px solid rgba(135, 206, 235, 1.0); /* Borda azul claro */
+}
+
+#workspaces button:hover {
+  background: rgba(88, 110, 117, 0.3); /* Fundo suave no hover */
+}
+
+#clock {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#language {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#custom-updater {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#disk {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#keyboard-state {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+#memory {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#cpu {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#pulseaudio {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#tray {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#network {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+#custom-notification {
+  padding-left: 11px;
+  padding-right: 15px;
+}
+
+#workspaces button {
+  background: rgba(45, 45, 55, 0.9); /* Fundo consistente com o restante do tema */
+  color: rgba(240, 240, 240, 0.9); /* Branco mais claro para texto */
+  border: none; /* Sem borda nos números */
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.active {
+  background: rgba(88, 110, 117, 0.6); /* Fundo mais suave para workspace ativa */
+  color: rgba(240, 240, 240, 1.0); /* Branco puro para texto ativo */
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.active span {
+  color: #ffffff; /* Cor do número da workspace ativa */
+  font-weight: bold; /* Negrito para destacar */
+}
+
+#workspaces button:hover {
+  background: rgba(88, 110, 117, 0.3); /* Fundo suave no hover */
+  color: rgba(240, 240, 240, 0.9); /* Texto branco mais claro */
+  border: none; /* Sem borda no hover */
+  transition: all 0.2s ease-in-out;
+}
+
+#workspaces button:focus {
+  outline: 2px solid rgba(0, 255, 200, 1.0); /* Verde-azulado para indicar foco */
+  outline-offset: -2px;
+}

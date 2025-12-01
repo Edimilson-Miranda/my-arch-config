@@ -1,0 +1,37 @@
+/* Configuração Principal */
+configuration {
+    show-icons: true;
+    location: 0;
+    width: 40;                       /* Reduzi a largura */
+    lines: 4;                         /* Reduzi o número de linhas para um menu mais compacto */
+    font: "monospace 12";             /* Fonte monocromática */
+    border: 2px;
+    border-color: #444444;
+    background-color: rgba(40, 40, 40, 0.9);  /* Fundo escuro com semitransparência ajustada */
+    foreground-color: #f8f8f2;       /* Texto claro */
+}
+
+/* Estilo geral */
+* {
+    background: rgba(40, 40, 40, 0.9);        /* Fundo escuro com semitransparência ajustada */
+    foreground: #f8f8f2;                       /* Texto claro */
+    border-color: #bd93f9;                     /* Cor roxa para o foco */
+    border-radius: 10px;                       /* Bordas arredondadas */
+}
+
+/* Elementos dentro da janela */
+element {
+    padding: 5px;
+}
+
+/* Ícones */
+element-icon {
+    size: 20px;                               /* Reduzi o tamanho dos ícones para uma interface mais compacta */
+}
+
+/* Janela */
+window {
+    border-radius: 10px;
+    border-color: #444444;
+    background-color: rgba(40, 40, 40, 0.9);   /* Fundo escuro com semitransparência ajustada */
+}
